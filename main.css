@@ -1,0 +1,33 @@
+.dark-primary-color    { background: #512DA8; }
+.default-primary-color { background: #673AB7; }
+.light-primary-color   { background: #D1C4E9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #00BCD4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+/*.test {
+  height: 200px;
+  margin: 50px 50px;
+}*/
+
+.bottom-spacer {
+
+}
+
+.top-content-row {
+  margin-top: 2%;
+}
+.content-row {
+  margin-bottom: 2%;
+}
+
+/*p {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}*/
+
+/*header p{
+  border-radius: 50%;
+}*/
