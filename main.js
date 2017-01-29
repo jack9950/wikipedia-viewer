@@ -1,4 +1,4 @@
-// Example of API search string to use for Wikepidea
+// Example of API search string to use for Wikepidea:
 // https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrlimit=10&prop=extracts|info&exintro&explaintext&exsentences=1&exlimit=max&inprop=url&gsrsearch=physics
 
 $(document).ready(function() {
