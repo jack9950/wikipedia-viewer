@@ -12,24 +12,19 @@
   </head>
   <body class="dark-primary-color">
     <div class="container text-center" id="container">
-      <div class="row">
-        <header class="col-xs-12"><p class="light-primary-color text-center">ASK<br>the<br>Wiki</p></header>
+      <div class="row main-header">
+        <header class="col-xs-12"><p class="light-primary-color text-center main-app-title">Search Wikipedia</p></header>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <form>
-            <div class="input-group">
-              <input id="searchBox" type="text" class="form-control" placeholder="Hello, I am Wiki. Click me to ask a question&hellip;">
-              <span class="input-group-btn">
-                <button id="searchButton" type="button" class="btn btn-default" >Search</button>
-              </span>
-            </div>
+          <form class="form-inline" id="searchForm">
+              <input id="searchBox" class="form-control searchBox" placeholder="Search&hellip;">
+              <input id="searchButton" type="Submit" class="btn btn-default form-control searchButton" value="Search">
           </form>
         </div>
       </div>
-      <!-- <div class="row" id="testing", testLink="https://www.google.com">
-        <div class="col-xs-12"><p class="light-primary-color text-center">This is a content row testing</p></div>
-      </div> -->
+    </div>
+    <div class="container text-center" id="container2">
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

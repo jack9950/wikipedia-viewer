@@ -11,6 +11,27 @@
   height: 200px;
   margin: 50px 50px;
 }*/
+.main-header {
+  margin: auto;
+  width: 90%;
+  /*border: 3px solid green;*/
+}
+
+.main-app-title {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.searchBox {
+  width:60%;
+  margin: 10px auto;
+}
+
+.searchButton {
+  width:25%;
+  margin: 10px auto;
+}
 
 .bottom-spacer {
 
@@ -23,11 +44,11 @@
   margin-bottom: 2%;
 }
 
-/*p {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}*/
+input {
+  display: inline;
+}
 
-/*header p{
-  border-radius: 50%;
-}*/
+form input:focus{
+  border-width: 2px;
+  border-color: #66b1ee;
+}

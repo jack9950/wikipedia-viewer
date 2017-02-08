@@ -3,13 +3,12 @@
 
 $(document).ready(function() {
 
-  function getSearchResults() {
+  function getSearchResults(searchQuery) {
     /*************************************************************************
     User enters a search string and hits enter.
     This will fetch the search results from the WikiMedia API
     **************************************************************************/
-
-    var searchQuery = $("#searchBox").val();
+    //alert("getSearchResults was called with searchQuery" + searchQuery);
 
     $.ajax ({
       url: 'https://en.wikipedia.org/w/api.php',
@@ -35,6 +34,8 @@ $(document).ready(function() {
     })
     .done(function(data) {
 
+      //alert("ajax call done" + );
+      $("#container2").empty();
       var pages = data.query.pages;
 
       var outerDiv,
@@ -65,7 +66,8 @@ $(document).ready(function() {
         innerDiv.append(titleParagraph);
         outerDiv.append(innerDiv);
 
-        $("#container").append(outerDiv);
+
+        $("#container2").append(outerDiv);
 
         $(outerDiv).on("click", function() {
           var articleUrl = $(this).attr("fullUrl");
@@ -79,6 +81,10 @@ $(document).ready(function() {
     })
   };
 
-  $("#searchButton").on("click", getSearchResults);
+$("#searchForm").on("submit", function(event){
+  event.preventDefault();
+  var searchQuery = $("#searchBox").val();
+  getSearchResults(searchQuery);
+});
 
 });
