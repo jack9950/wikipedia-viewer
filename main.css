@@ -7,14 +7,22 @@
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 
-/*.test {
-  height: 200px;
-  margin: 50px 50px;
-}*/
 .main-header {
-  margin: auto;
-  width: 90%;
-  /*border: 3px solid green;*/
+  font: 400 100px/1.0 "Playball", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Smartphones and tablets (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px) {
+  .main-header {
+    font: 400 3em/1.0 "Playball", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 481px) {
+  .main-header {
+    font: 400 7em/1.0 "Playball", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 }
 
 .main-app-title {
@@ -33,19 +41,14 @@
   margin: 10px auto;
 }
 
-.bottom-spacer {
-
+.randomArticleButton{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.top-content-row {
-  margin-top: 2%;
-}
-.content-row {
-  margin-bottom: 2%;
-}
-
-input {
-  display: inline;
+form input:hover {
+  border-width: 2px;
+  border-color: #66b1ee;
 }
 
 form input:focus{
